@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "IRANSans";
+  src: url("fonts/IRANSansWeb.ttf"), url("fonts/IRANSansWeb.woff");
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+body {
+  font-family: "IRANSans";
+  background-color: #45194c;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav {
+  width: 90%;
+  background: linear-gradient(40deg,#7c3287 70%,#916797);
+  max-height: 110px;
+  display: flex;
+  justify-content: center;
+  border-radius: 17px;
+  padding: 3px 0;
+  margin: 2rem 1rem;
+}
+nav:hover {
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+}
+.title{
+  font-size: 4rem;
+  font-weight: 700;
+  margin-block: 3rem 1rem;
+  color: #f9f9f9;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 25px;
+  direction: rtl;
+}
+.right,
+.left {
+  display: flex;
+  align-items: center;
+}
+.left {
+  gap: 22px;
+  margin-left: 5px;
+}
+.right {
+  gap: 23px;
+  display: flex;
+  align-items: center;
+}
+.list_menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-right: 2rem;
+}
+.list_item {
+  justify-content: flex-end;
+  position: relative;
+}
+.list_item::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(138, 138, 138, 0.4);
+  position: absolute;
+  bottom: -0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.7s;
+}
+.list_item:hover::after {
+  background-color: #1224aa;
+  width: 50%;
+  border-radius: 2px;
+}
+.left button {
+  border: none;
+  background-color: #45194c;
+  border-radius: 12px;
+  font-size: 1.13rem;
+  font-weight: 500px;
+}
+.left button:hover {
+  background-color: #2d1231;
+  transform: scale(1.1);
+}
+.left a{
+  font-size: 1.15rem;
+}
+.left a:hover{
+  color: #45194c;
+}
