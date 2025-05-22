@@ -21,7 +21,7 @@ button {
   transition: 0.3s ease-in-out;
   color: white;
 }
-*::selection{
+*::selection {
   background-color: transparent;
   border-radius: 50%;
 }
@@ -31,6 +31,11 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+@media (min-width: 793px) {
+  .right i {
+    display: none;
+  }
 }
 nav {
   width: 90%;
@@ -120,7 +125,8 @@ nav:hover {
 .right i {
   cursor: pointer;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 793px) {
   .title {
     font-size: 2rem;
     margin-block: 1.5rem 0.5rem;
@@ -156,22 +162,22 @@ nav:hover {
     border-radius: 7px;
   }
 }
-@media (max-width :320px) {
+@media (max-width: 413px) {
   .title {
     font-size: 1.25rem;
     margin-block: 2rem 0rem;
   }
-  .left a{
+  .left a {
     display: none;
   }
-  .right .icon img{
+  .right .icon img {
     max-width: 50px;
     line-height: 50px;
   }
-  .left button{
+  .left button {
     border-radius: 11px;
   }
-  .right i{
+  .right i {
     margin-inline: 0;
     font-size: 1rem;
     margin-right: -15px;
@@ -179,7 +185,19 @@ nav:hover {
   /* .right i:nth-child(1){
     margin-right: -20px;
   } */
-  .right .icon{
+  .right .icon {
     margin-left: -20px;
+  }
+}
+@media (max-width:283px){
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .right i{
+    display: none;
+  }
+  .left button{
+    margin-right: -68px;
   }
 }
