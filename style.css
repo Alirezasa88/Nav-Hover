@@ -21,7 +21,7 @@ button {
   transition: 0.3s ease-in-out;
   color: white;
 }
-*:active{
+*::selection{
   background-color: transparent;
 }
 body {
