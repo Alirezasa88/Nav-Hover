@@ -23,6 +23,7 @@ button {
 }
 *::selection{
   background-color: transparent;
+  border-radius: 50%;
 }
 body {
   font-family: "IRANSans";
