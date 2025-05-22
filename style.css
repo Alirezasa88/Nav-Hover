@@ -21,6 +21,9 @@ button {
   transition: 0.3s ease-in-out;
   color: white;
 }
+*:active{
+  background-color: transparent;
+}
 body {
   font-family: "IRANSans";
   background-color: #45194c;
