@@ -30,7 +30,7 @@ body {
 }
 nav {
   width: 90%;
-  background: linear-gradient(40deg,#7c3287 70%,#916797);
+  background: linear-gradient(40deg, #7c3287 70%, #916797);
   max-height: 110px;
   display: flex;
   justify-content: center;
@@ -41,7 +41,7 @@ nav {
 nav:hover {
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
 }
-.title{
+.title {
   font-size: 4rem;
   font-weight: 700;
   margin-block: 3rem 1rem;
@@ -80,7 +80,7 @@ nav:hover {
   justify-content: flex-end;
   position: relative;
 }
-.list_item::after {
+.list_item a::after {
   content: "";
   width: 4px;
   height: 4px;
@@ -92,7 +92,7 @@ nav:hover {
   transform: translateX(-50%);
   transition: 0.7s;
 }
-.list_item:hover::after {
+.list_item a:hover::after {
   background-color: #1224aa;
   width: 50%;
   border-radius: 2px;
@@ -108,9 +108,44 @@ nav:hover {
   background-color: #2d1231;
   transform: scale(1.1);
 }
-.left a{
+.left a {
   font-size: 1.15rem;
 }
-.left a:hover{
+.left a:hover {
   color: #45194c;
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin-block: 1.5rem 0.5rem;
+  }
+  nav {
+    max-width: 678px;
+  }
+  .right .icon {
+    width: 50px;
+  }
+  .product a {
+    display: none;
+  }
+  .product i {
+    font-size: 1.25rem;
+    margin-right: -7px;
+  }
+  .product i:nth-child(1) {
+    font-size: 1.25rem;
+    margin-right: 10px;
+  }
+  .product i:hover {
+    color: #1224aa;
+  }
+  .left a {
+    font-size: 0.75rem;
+    margin-left: -3px;
+  }
+  .left button {
+    font-size: 0.75rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 7px;
+  }
 }
